@@ -2,8 +2,7 @@ package br.com.programadordeelite.gdc
 
 import android.os.Bundle
 import android.view.View
-import br.com.programadordeelite.gdc.codelab.util.navTo
-import br.com.programadordeelite.gdc.codelab.util.toast
+import br.com.programadordeelite.gdc.codelab.util.navToExt
 import br.com.programadordeelite.gdc.databinding.FragmentMainBinding
 
 /** Main Menu Study Guide */
@@ -22,7 +21,7 @@ class MainFragment : androidx.fragment.app.Fragment(R.layout.fragment_main) {
         //requireActivity().requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
 
         binding = FragmentMainBinding.bind(view)
-        binding.codelabToastSnake.setOnClickListener { navTo(R.id.toastSnakeFragment) }
+        binding.codelabToastSnake.setOnClickListener { navToExt(R.id.toastSnakeFragment) }
         //binding.codelabNotification.setOnClickListener { navTo(R.id.notificationFragment) }
        // binding.codelabWorkManager.setOnClickListener { navTo(R.id.selectImageFragment) }
        // binding.codelabMaterialComponents.setOnClickListener { navTo(R.id.materialComponentsFragment) }

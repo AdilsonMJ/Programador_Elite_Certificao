@@ -2,10 +2,8 @@ package br.com.programadordeelite.gdc.codelab.userinterface.activityintents
 
 import android.os.Bundle
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import br.com.programadordeelite.gdc.R
-import br.com.programadordeelite.gdc.codelab.util.navTo
 import br.com.programadordeelite.gdc.databinding.FragmentSendBinding
 
 class SendFragment : Fragment(R.layout.fragment_send) {

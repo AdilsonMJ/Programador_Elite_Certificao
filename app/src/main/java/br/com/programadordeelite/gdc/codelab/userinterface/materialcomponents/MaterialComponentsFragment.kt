@@ -1,13 +1,10 @@
 package br.com.programadordeelite.gdc.codelab.userinterface.materialcomponents
 
 import android.os.Bundle
-import android.text.Editable
 import android.view.View
 import androidx.fragment.app.Fragment
 import br.com.programadordeelite.gdc.R
-import br.com.programadordeelite.gdc.codelab.util.navTo
 import br.com.programadordeelite.gdc.databinding.FragmentMaterialComponentsBinding
-import kotlinx.android.synthetic.main.fragment_material_components.*
 
 class MaterialComponentsFragment : Fragment(R.layout.fragment_material_components) {
 

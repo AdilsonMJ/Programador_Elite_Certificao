@@ -4,9 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import br.com.programadordeelite.gdc.R
-import br.com.programadordeelite.gdc.codelab.util.snake
 import br.com.programadordeelite.gdc.databinding.FragmentCustomViewBinding
-import br.com.programadordeelite.gdc.databinding.FragmentReplyBinding
 
 class CustomViewFragment : Fragment(R.layout.fragment_custom_view) {
 

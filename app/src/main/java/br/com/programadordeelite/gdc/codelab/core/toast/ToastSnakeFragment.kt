@@ -3,12 +3,11 @@ package br.com.programadordeelite.gdc.codelab.core.toast
 import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import br.com.programadordeelite.gdc.R
-import br.com.programadordeelite.gdc.codelab.util.toast
+import br.com.programadordeelite.gdc.codelab.util.snakeExt
+import br.com.programadordeelite.gdc.codelab.util.toastExt
 import br.com.programadordeelite.gdc.databinding.FragmentToastSnakeBinding
-import com.google.android.material.snackbar.Snackbar
 
 class ToastSnakeFragment : Fragment(R.layout.fragment_toast_snake) {
 
@@ -17,9 +16,19 @@ class ToastSnakeFragment : Fragment(R.layout.fragment_toast_snake) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // +---------------------------------------------------------------------------------+
-        // | ESCREVA SEU CÓDIGO ACOMPANHANDO A AULA NO YOUTUBE                               |
-        // | JÁ APROVEITA E SEGUE O CANAL >> LINK PARA AULA: https://youtu.be/9vfXfq1RfTo    |
-        // +---------------------------------------------------------------------------------+
+        requireActivity().requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
+        binding = FragmentToastSnakeBinding.bind(view)
+
+        binding.toast.setOnClickListener{
+            toastExt("Minhas mensagem para voce!")
+        }
+
+        binding.snake.setOnClickListener{
+            snakeExt(view, "Essa é uma mensagem de snake")
+        }
+
+        binding.snakeAction.setOnClickListener{
+            snakeExt(view, "Voce é uma cobra")
+        }
     }
 }

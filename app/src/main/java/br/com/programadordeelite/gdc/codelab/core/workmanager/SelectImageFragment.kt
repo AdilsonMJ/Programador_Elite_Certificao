@@ -1,27 +1,12 @@
 package br.com.programadordeelite.gdc.codelab.core.workmanager
 
-import android.Manifest
-import android.app.Activity
-import android.content.ContentResolver
-import android.content.Intent
-import android.content.pm.PackageManager
-import android.net.Uri
 import android.os.Bundle
-import android.provider.MediaStore
 import android.view.View
-import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
-import androidx.activity.result.contract.ActivityResultContract
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
-import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
 import br.com.programadordeelite.gdc.R
-import br.com.programadordeelite.gdc.codelab.util.navTo
 import br.com.programadordeelite.gdc.databinding.FragmentSelectImageBinding
-import timber.log.Timber
 
 class SelectImageFragment : Fragment(R.layout.fragment_select_image) {
 

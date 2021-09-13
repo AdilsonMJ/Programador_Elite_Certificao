@@ -1,14 +1,9 @@
 package br.com.programadordeelite.gdc.codelab.datamanagement.appsettings
 
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuInflater
-import android.view.MenuItem
 import android.view.View
 import androidx.fragment.app.Fragment
 import br.com.programadordeelite.gdc.R
-import br.com.programadordeelite.gdc.codelab.util.navTo
-import br.com.programadordeelite.gdc.codelab.util.toast
 import br.com.programadordeelite.gdc.databinding.FragmentAppSettingsBinding
 
 class AppSettingsFragment : Fragment(R.layout.fragment_app_settings) {
